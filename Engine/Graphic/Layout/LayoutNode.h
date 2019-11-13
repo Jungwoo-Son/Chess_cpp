@@ -1,0 +1,10 @@
+#ifndef ENGINE_GRAPIC_LAYOUT_LAYOUTNODE_H_
+#define ENGINE_GRAPIC_LAYOUT_LAYOUTNODE_H_
+
+class LayoutNode {
+private:
+	char **
+};
+
+#endif // !ENGINE_GRAPIC_LAYOUT_LAYOUTNODE_H_
+

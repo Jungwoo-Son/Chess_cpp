@@ -6,8 +6,9 @@
 
 #include "Node.h"
 #include "../Color.h"
+#include "LayoutContainer.h"
 
-class LayoutNode : public Node{
+class LayoutNode : public Node {
 private:
 	char** map;
 	ColorCode foregColor;//±ÛÀÚ»ö

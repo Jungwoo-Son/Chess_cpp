@@ -5,15 +5,15 @@ void LayoutNode::printLayout() {
 	HANDLE stdoutHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 	
 	SetConsoleTextAttribute(stdoutHandle, (int)foregColor + (int)backColor * 16);
-	pos.X = posX;
-	pos.Y = posY;
+	pos.X = getPosX();
+	pos.Y = getPosY();
 	SetConsoleCursorPosition(stdoutHandle, pos);
-	for (int i = 0; i < sizeY; i++) {
-		for (int j = 0; j < sizeX; j++) {
+	for (int i = 0; i < getSizeY(); i++) {
+		for (int j = 0; j < getSizeX(); j++) {
 			putc(map[i][j], stdout);
 		}
-		pos.X = posX;
-		pos.Y = posY + i + 1;
+		pos.X = getSizeX();
+		pos.Y = getSizeY() + i + 1;
 		SetConsoleCursorPosition(stdoutHandle, pos);
 	}
 }

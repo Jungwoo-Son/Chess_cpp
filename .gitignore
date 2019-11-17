@@ -1,6 +1,5 @@
 *.user
 *.filters
 *.vcxproj
-*.gitignore
-.vs/
 Debug/
+/Debug
